@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Custom Landing Page</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #f4f4f4; 
+            background-color: #000; 
+        }
+
+        /* Header Styling */
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Home Section */
+        #home {
+            background-image: url('https://img.freepik.com/premium-photo/full-shot-travel-concept-with-landmarks_1174912-5410.jpg?size=626&ext=jpg&ga=GA1.1.891939900.1697978745&semt=ais_hybrid'); /* Your uploaded image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 60px;
+            position: relative; }
+
+        #home .intro {
+            position: relative;
+            z-index: 1; 
+            padding-top: 80px; 
+        }
+
+        #home .intro .main-image {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%; 
+            height: auto;
+            z-index: 0; 
+            margin-bottom: 20px;         }
+
+        #home .intro h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        #home .intro p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        #home .button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            position: relative;
+            z-index: 1;
+        }
+
+        #home .button:hover {
+            background-color: #555;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 50px;
+            text-align: center;
+            background-color: #111; 
+            margin: 20px 0;
+        }
+
+        /* Services Section */
+        .service-boxes {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service-box {
+            background-color: #222; 
+            padding: 20px;
+            border: 1px solid #444;
+            width: 30%;
+            margin: 15px;
+            text-align: center;
+        }
+
+        .service-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .service-box h3 {
+            margin: 15px 0;
+        }
+
+        /* Contact Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form input, form textarea {
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #333; 
+            color: #f4f4f4; 
+            border: 1px solid #555;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #333;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #111; 
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section id="home">
+        <div class="intro">
+            <img src="/path/to/your/image.jpg" alt="Main Image" class="main-image"> <!-- Added Image -->
+            <h1>Welcome to THE GLOBAL TOURISM</h1>
+            <p>Explore our services and feel free to contact us.</p>
+            <a href="#about" class="button">Learn More</a>
+            <a href="#services" class="button">Our Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>We are a company committed to delivering the best services in the industry along wiith our customers satisfaction and we believe in our services.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="service-boxes">
+            <div class="service-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYuq3a9dlUU8vGI2eS1WwWSMdSmjprqz7Cjw&s" alt="Service 1 Image"> <!-- Updated image -->
+                <h3>first class</h3>
+                <p>----------------------------------------</p>
+            </div>
+            <div class="service-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5hH4X93gAbSAT61ZVxLDEC72CWsaKQq-FuZiwfa4Yt4zzjO0SwX4P6jrbB3y_EOIytJI&usqp=CAU" alt="Service 2 Image"> <!-- Updated image -->
+                <h3>second class</h3>
+                <p>----------------------------------------</p>
+            </div>
+            <div class="service-box">
+                <img src="https://i0.wp.com/fottam.com/wp-content/uploads/2014/02/AC-First-Class-Coupe-Interior-Indian-Railways.jpg?fit=1160%2C773&ssl=1" alt="Service 3 Image"> <!-- Updated image -->
+                <h3>third class</h3>
+                <p>---------------------------------------</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Description" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; The Tour ND Chill. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

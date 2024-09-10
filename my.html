@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Portfolio</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Main Introduction Section */
+        .intro {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .intro img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .intro h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #666;
+        }
+
+        /* Skills Section */
+        .skills {
+            padding: 40px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .skills h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .skills ul {
+            list-style-type: none;
+        }
+
+        .skills ul li {
+            display: inline-block;
+            background-color: #ddd;
+            color: #333;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 25px;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            padding: 40px;
+            background-color: #eee;
+            text-align: center;
+        }
+
+        .portfolio h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-items {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .portfolio-item {
+            background-color: #fff;
+            width: 30%;
+            margin: 10px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .portfolio-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 40px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .contact a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .contact a:hover {
+            background-color: #555;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1> PREMKUMAR MATHANGI </h1>
+        <p>Web Developer | Programmer | Designer</p>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <img src="my pic forever.jpg" alt="Profile Picture">
+        <h2>Hello, I'm PREMKUMAR MATHANGI </h2>
+        <p>I am a passionate web developer with experience in building responsive websites and web applications. I love turning complex problems into simple, beautiful, and intuitive solutions.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>c</li>
+            <li>python</li>
+            
+        </ul>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <img src="voice control robot car.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>voice control robot car.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://media.istockphoto.com/id/944546752/video/global-business-concept-of-connections-and-information-transfer-in-the-world.jpg?s=640x640&k=20&c=a6WQj-HDsWbongRgpW2ZAWWq3ITQej7CuFWPz4YmuQM=" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>3-HBP: A Three-Level Hidden Bayesian Link Prediction Model in Social Networks.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZAoYUNXo8OPOocT122omK7GXUUsWOc5y8Tab9_wVLn1bqBJFGViTaCzFPR2Wo6UU0DHc&usqp=CAU" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>flower recognition using deeplearning .</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: premchandh1916@gmail.com</p>
+        <p>Phone: +91 93923932XX</p>
+        <a href="mailto:premchandh1916@gamil.com">Send me an email</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
